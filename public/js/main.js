@@ -3,8 +3,8 @@ $(document).ready(function () {
 });
 
 function deleteUser() {
-    var confifirmation = confirm('Are you sure');
-    if (confifirmation) {
+    var confirmation = confirm('Are you sure');
+    if (confirmation) {
         $.ajax({
             type: 'DELETE',
             url: '/users/delete/'+$(this).data('id')
