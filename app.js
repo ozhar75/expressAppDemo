@@ -52,37 +52,6 @@ app.use(expressValidator({
     }
 }));
 
-//var users = [
-//    {
-//        id: 1,
-//        first_name: "Akshay",
-//        last_name: "Dhonde",
-//        email: "ozhar75@gmail.com"
-//    },
-//    {
-//        id: 2,
-//        first_name: "Ankit",
-//        last_name: "Dhonde",
-//        email: "ankit31@gmail.com"
-//    },
-//    {
-//        id: 3,
-//        first_name: "Pratik",
-//        last_name: "Deshmukh",
-//        email: "pratik@gmail.com"
-//    }
-//]
-
-// var person = [
-//     {
-//         name : "Akshay",
-//         age : 30
-//     },
-//     {
-//         name : "Ankit",
-//         age : 25
-//     }
-// ]
 
 app.get('/', function (req, res) {
     db.users.find(function (err, docs) {
